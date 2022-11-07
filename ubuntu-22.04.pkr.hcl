@@ -260,12 +260,9 @@ source "vsphere-iso" "linux-ubuntu-server" {
         "./${var.http_directory}/user-data"]
   cd_label = "cidata"
   boot_command = [
-    "<esc><esc><esc>",
-    "<enter><wait>",
-    "/casper/vmlinuz ",
-    "initrd=/casper/initrd ",
-    "autoinstall ",
-    "boot<enter>"
+    "e<down><down><down><end>",
+    " autoinstall ds=nocloud;",
+    "<F10>"
   ]
   ip_wait_timeout = "20m"
   ssh_password = var.ssh_password
