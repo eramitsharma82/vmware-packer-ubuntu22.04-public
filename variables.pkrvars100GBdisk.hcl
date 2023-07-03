@@ -8,15 +8,15 @@ http_directory = "http"
 
 # Virtual Machine Settings
 
-vm_name                     = "Ubuntu-2204-Template-100GB-Thin"
+vm_name                     = "Ubuntu-2204-Template-10025GB-Thin"
 vm_guest_os_type            = "ubuntu64Guest"
 vm_version                  = 14
 vm_firmware                 = "bios"
 vm_cdrom_type               = "sata"
 vm_cpu_sockets              = 1
 vm_cpu_cores                = 1
-vm_mem_size                 = 1024
-vm_disk_size                = 102400
+vm_mem_size                 = 2048
+vm_disk_size                = 25000
 thin_provision              = true
 disk_eagerly_scrub          = false
 vm_disk_controller_type     = ["pvscsi"]

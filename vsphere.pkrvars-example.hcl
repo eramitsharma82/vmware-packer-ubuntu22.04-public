@@ -4,18 +4,18 @@
 
 # Credentials
 
-vcenter_username                = "administrator@vsphere.home"
-vcenter_password                = "superSecretPassword"
+vcenter_username                = "svc_lab_builds@ampiondev.com.au"
+vcenter_password                = "qBfuWEbZBmTdI3rheRkb"
 
 # vSphere Objects
 
 vcenter_insecure_connection     = true
-vcenter_server                  = "192.168.110.110"
-vcenter_datacenter              = "Datacenter"
-vcenter_host                    = "192.168.110.111"
-vcenter_datastore               = "Datastore2_NonSSD"
-vcenter_network                 = "VM Network"
-vcenter_folder                  = "Templates"
+vcenter_server                  = "vc-s-01.ampiondev.com.au"
+vcenter_datacenter              = "ampionlab"
+vcenter_host                    = "172.16.0.12"
+vcenter_datastore               = "labstore01"
+vcenter_network                 = "VLAN220"
+vcenter_folder                  = "LAB-Templates"
 
 # ISO Objects
-iso_path                        = "[Datastore2_NonSSD] /packer_cache/ubuntu-22.04.3-live-server-amd64.iso"
+iso_path                        = "[labstore01] 01-Images/ubuntu-20.04.4-live-server-amd64.iso"
